@@ -436,6 +436,11 @@ textarea.form-control {
 	line-height: 1.5em;
 	color: #777;
 }
+@media (max-width: 767px) {
+	.feature-description {
+		text-align: center;
+	}
+}
 /* WHY CHOOSE US END */
 
 /* SERVICES START*/
@@ -502,6 +507,9 @@ textarea.form-control {
 	}
 	.nav-tabs>li>a, .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover, .nav-tabs>li>a:hover {
 		margin-bottom: 30px;
+	}
+	blockquote p {
+		font-size: 18px;
 	}
 }
 /* LETS TALK START*/
@@ -635,6 +643,9 @@ textarea.form-control {
 	.carousel-indicators {
     bottom: -30%;  
   }
+  .reviews .carousel-caption p {
+  	font-size: 14px;
+  }
 }
 /* REVIEWS END */
 
@@ -667,6 +678,11 @@ textarea.form-control {
 }
 .tab-content .tab-pane {
     padding-top: 40px;
+}
+@media (max-width: 599px) {
+	.portfolio-tabs .nav-tabs>li {
+		width: 50%;
+	}
 }
 /* PORTFOLIO END */
 
@@ -737,6 +753,12 @@ textarea.form-control {
 		width: 100%;
 		margin-bottom: 10px;
 	}
+	.latest-news .title {
+		text-align: center;
+	}
+	.latest-news .title a {
+		float: none;
+	}
 }
 
 /* LATEST NEWS END */
@@ -754,7 +776,7 @@ textarea.form-control {
 }
 @media (max-width: 767px) {
 	.subscribe input[name="userEmail"] {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 10px;
 	}
@@ -839,6 +861,11 @@ textarea.form-control {
 	.contact-item-info p {
 		font-size: 14px;
 	}
+	.contact-us input[name="userName"],
+	.contact-us input[name="userEmail"],
+	.contact-us textarea[name="userMessage"] {
+		width: 100%;
+	}
 }
 
 /* CONTACT US END */
@@ -920,6 +947,7 @@ textarea.form-control {
 	transform: rotate(45deg);
 	margin: 0 auto;
 	cursor: pointer;
+	border-radius: 2px;
 }
 .social-icon:hover {
     color: #fff;
