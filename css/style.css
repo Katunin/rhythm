@@ -167,6 +167,7 @@ textarea.form-control {
   background-color: #000;
   padding: 25px 25px;
   color: #fff;
+  z-index: 999;
 }
 
 .logo {
@@ -227,6 +228,7 @@ textarea.form-control {
   height: 100vh;
   padding-top: 71px;
   text-align: center;
+  position: relative;
 }
 
 .inner::before {
@@ -292,6 +294,15 @@ textarea.form-control {
 	color: #111;
 	font-size: 15px;  
 	z-index: 2;
+	animation-name: bounce;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+	50% {
+		transform: translateY(-5px);
+	}
 }
 
 @media (max-width: 1199px) {
@@ -407,6 +418,11 @@ textarea.form-control {
 	}
 	.default-section.about-studio {
 		padding: 140px 0 0;
+	}
+}
+@media (max-width: 599px) {
+	.our-team .row {
+		margin-right: -15px;
 	}
 }
 /* OUR TEAM END */
